@@ -89,6 +89,9 @@ header .header-right{
     flex: 5;
 }
 
+.img-rounded{
+    border-radius: 5%;
+}
 header .header-right img{
     width: 100%;
 }
