@@ -6,15 +6,15 @@
 }
 
 body{
-    font-family: 'Roboto', sans-serif;
-    margin: 3% 15%;
-    background-color: var(--background-color);
-    color: var(--text-color)
+      font-family: 'Roboto', sans-serif;
+      margin: 3% 15%;
+      background-color: var(--background-color);
+      color: var(--text-color)
 }
 
 p{
-    line-height: 25px;
-}
+      line-height: 25px;
+  }
 
 nav{
     display: flex;
@@ -58,7 +58,7 @@ header .header-left{
 header .header-left small{
     font-weight: bold;
     display: flex;
-    align-items: center;
+    align-items: 5;
 }
 
 header .header-left .links{
@@ -122,7 +122,7 @@ footer p{
 
 @media screen and (max-width: 621px){
     header{
-        flex-direction: column-reverse;
+    flex-direction: column-reverse;
     }
     header .header-left{
         margin-right: 0;
@@ -154,6 +154,6 @@ footer p{
     transition: all 0.3s ease;
 }
 
-.card img {
+.card img{
     width: 100%;
 }
