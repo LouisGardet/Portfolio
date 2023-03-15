@@ -58,7 +58,7 @@ header .header-left{
 header .header-left small{
     font-weight: bold;
     display: flex;
-    align-items: 5;
+    align-items: center;
 }
 
 header .header-left .links{
@@ -139,21 +139,51 @@ footer p{
     }
 }
 
-.cards{
+.cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
     margin-top: 50px;
 }
-.card{
-    display: flex; justify-content: center; align-items: center;
+
+.card {
+    position: relative;
     background-color: #fff;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.card:hover .card-text {
+    transform: translateX(0);
+}
+
+.card img {
+    display: block;
+    width: 100%;
+    height: auto;
     transition: all 0.3s ease;
 }
 
-.card img{
+.card-text {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.card-text h3 {
+    margin-top: 0;
+}
+
+.card-text p {
+    margin-bottom: 0;
 }
