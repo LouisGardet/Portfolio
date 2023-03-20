@@ -197,6 +197,6 @@ footer p{
 }
 
 .card {
-    height: auto;
+    height: content-box;
     overflow: auto;
 }
