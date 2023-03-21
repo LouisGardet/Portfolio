@@ -114,30 +114,7 @@ footer p{
     font-size: 15px;
 }
 
-@media screen and (max-width: 880px) {
-    .images .image-card{
-        flex-wrap: wrap;
-    }
-}
 
-@media screen and (max-width: 621px){
-    header{
-    flex-direction: column-reverse;
-    }
-    header .header-left{
-        margin-right: 0;
-    }
-    header .header-right{
-        margin-bottom: 40px;
-    }
-    header .header-right img{
-        width: 250px;
-    }
-
-    .images .image-card .image-left img{
-        width: 100%;
-    }
-}
 
 .cards {
     display: grid;
@@ -176,6 +153,7 @@ footer p{
 }
 
 .card-text {
+    overflow-wrap: break-word;
     position: absolute;
     top: 0;
     left: 0;
@@ -199,4 +177,29 @@ footer p{
 .card {
     height: content-box;
     overflow: auto;
+}
+
+@media screen and (max-width: 880px) {
+    .images .image-card{
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 621px){
+    header{
+        flex-direction: column-reverse;
+    }
+    header .header-left{
+        margin-right: 0;
+    }
+    header .header-right{
+        margin-bottom: 40px;
+    }
+    header .header-right img{
+        width: 250px;
+    }
+
+    .images .image-card .image-left img{
+        width: 100%;
+    }
 }
